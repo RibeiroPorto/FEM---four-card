@@ -13,23 +13,26 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .container-introduction{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    
+    margin: 10px 20px 30px 20px;
 }
 .container-introduction h1{
     font-weight: 200;
     font-size: 30px;
+    text-align: center;
 }
 .container-introduction h2{
  font-weight: 600;
  font-size: 30px;
  margin-bottom: 20px;
+ text-align: center;
 }
 .container-introduction p{
     font-weight: 400;
@@ -40,8 +43,11 @@ body{
 }
 .container-cards{
     display: flex;
+    
     align-items: center;
     justify-content: center;
+    margin: 10px 20px 60px 20px;
+    
 
 }
 .container-cards .card{
@@ -53,6 +59,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+
 }
 .container-cards .card h3{
     margin-bottom: 15px;
@@ -69,19 +76,33 @@ body{
 
 .container-cards .left.card{
     border-top: 4px solid hsl(180, 62%, 55%);
+    margin: 0 10px;
 }
 .container-cards .mean-cards{
-    margin: 0 20px;
+    
 }
 .container-cards .top-mean.card{
     border-top: 4px solid hsl(0, 78%, 62%);
     margin-bottom: 20px;
+    margin: 0 10px 20px;
 }
 
 .container-cards .bot-mean.card{
     border-top: 4px solid hsl(34, 97%, 64%);
+    margin: 0 10px;
 }
 
 .container-cards .right.card{
     border-top: 4px solid hsl(212, 86%, 64%);
+    margin: 0 10px;
+}
+
+@media (max-width:768px) {
+    .container-cards{
+        flex-direction: column;
+
+    }
+    .container-cards .mean-cards{
+        margin: 20px 10px 20px 10px;
+    }
 }
